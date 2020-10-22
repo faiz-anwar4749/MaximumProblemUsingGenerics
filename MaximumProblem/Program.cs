@@ -6,14 +6,14 @@ namespace MaximumProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Maximum Number Problem");
-            int max = Max(99, 89, 88);
-            int max1 = Max(978,999,977);
-            int max2 = Max(89899, 786547, 789765);
+            float max = Max(99.88f, 89.87f, 88.99f);
+            float max1 = Max(978.67f,999.87f,977.54f);
+            float max2 = Max(89899.65f, 789765.76f, 789765.83f);
             Console.WriteLine("The maximum number is: " + max);
             Console.WriteLine("The maximum number is: " + max1);
             Console.WriteLine("The maximum number is: " + max2);
         }
-        public static int Max(int firstValue, int secondValue, int thirdValue)
+        public static float Max(float firstValue, float secondValue, float thirdValue)
         {
             if (firstValue.CompareTo(secondValue) > 0 && firstValue.CompareTo(thirdValue) > 0 ||
                firstValue.CompareTo(secondValue) >= 0 && firstValue.CompareTo(thirdValue) > 0 ||
